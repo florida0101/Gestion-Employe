@@ -128,7 +128,7 @@ npm install
 ### 3. Lancer le projet
 
 ```
-npm start
+npx expo start
 ```
 
 ---
