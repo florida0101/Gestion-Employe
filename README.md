@@ -1,158 +1,50 @@
-# Gestion Employe
+# Welcome to your Expo app 👋
 
-## Description
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-Cette application est une **application hybride (mobile et web)** développée avec React Native (Expo).
-Elle permet de gérer une liste d’employés, calculer leurs salaires et visualiser des statistiques sous forme de graphiques.
+## Get started
 
----
+1. Install dependencies
 
-## Objectifs
+   ```bash
+   npm install
+   ```
 
-* Gérer les employés (CRUD)
-* Calculer automatiquement les salaires
-* Afficher des statistiques (total, min, max)
-* Visualiser les données avec des graphiques
-* Utiliser une base de données distante (PostgreSQL)
+2. Start the app
 
----
+   ```bash
+   npx expo start
+   ```
 
-## Technologies utilisées
+In the output, you'll find options to open the app in a
 
-### Frontend
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-* React Native (Expo)
-* FlatList
-* React Navigation
-* React Native Chart Kit
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-### Backend
+## Get a fresh project
 
-* Express (API REST)
+When you're ready, run:
 
-### Base de données
-
-* PostgreSQL
-
----
-
-## Structure du projet
-
-```
-employee-management/
-│
-├── assets/
-├── src/
-│   ├── components/
-│   ├── screens/
-│   ├── navigation/
-│   ├── services/
-│   ├── utils/
-│   ├── constants/
-│
-├── App.js
-├── package.json
-└── README.md
+```bash
+npm run reset-project
 ```
 
----
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Fonctionnalités
+## Learn more
 
-### Gestion des employés
+To learn more about developing your project with Expo, look at the following resources:
 
-* Ajouter un employé
-* Afficher la liste des employés
-* Modifier un employé
-* Supprimer un employé
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
----
+## Join the community
 
-### Calcul des salaires
+Join our community of developers creating universal apps.
 
-* Salaire = Nombre de jours × Taux journalier
-* Calcul automatique pour chaque employé
-
----
-
-### Statistiques
-
-* Salaire total
-* Salaire minimum
-* Salaire maximum
-
----
-
-### 🔹 Visualisation graphique
-
-* Histogramme (Bar Chart)
-* Camembert (Pie Chart)
-
----
-
-## Écrans de l’application
-
-* HomeScreen : Liste des employés + statistiques
-* AddEmployeeScreen : Ajouter un employé
-* EditEmployeeScreen : Modifier un employé
-* ChartScreen : Visualisation graphique
-
----
-
-## API (Backend)
-
-### Endpoints disponibles :
-
-* `GET /employes` → récupérer les employés
-* `POST /employes` → ajouter un employé
-* `PUT /employes/:id` → modifier un employé
-* `DELETE /employes/:id` → supprimer un employé
-
----
-
-## Installation
-
-### 1. Cloner le projet
-
-```
-git clone https://github.com/ton-repo/employee-management.git
-cd employee-management
-```
-
-### 2. Installer les dépendances
-
-```
-npm install
-```
-
-### 3. Lancer le projet
-
-```
-npx expo start
-```
-
----
-
-## Exécution
-
-* Mobile : scanner le QR code avec Expo Go
-* Web :
-
-```
-npm run web
-```
-
----
-
-## Calcul des statistiques
-
-Les statistiques sont calculées à partir des salaires :
-
-```
-Salaire = nombreJours * tauxJournalier
-```
-
----
-## Auteur
-
-Projet réalisé dans le cadre d’un projet scolaire de développement d’une application hybride.
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
