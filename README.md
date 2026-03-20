@@ -1,50 +1,159 @@
-# Welcome to your Expo app 👋
+# Gestion Employe
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Description
 
-## Get started
+Cette application est une **application hybride (mobile et web)** développée avec React Native (Expo).
+Elle permet de gérer une liste d’employés, calculer leurs salaires et visualiser des statistiques sous forme de graphiques.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## Objectifs
 
-2. Start the app
+* Gérer les employés (CRUD)
+* Calculer automatiquement les salaires
+* Afficher des statistiques (total, min, max)
+* Visualiser les données avec des graphiques
+* Utiliser une base de données distante (PostgreSQL)
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## Technologies utilisées
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Frontend
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+* React Native (Expo)
+* FlatList
+* React Navigation
+* React Native Chart Kit
 
-## Get a fresh project
+### Backend
 
-When you're ready, run:
+* Express (API REST)
 
-```bash
-npm run reset-project
+### Base de données
+
+* PostgreSQL
+
+---
+
+## Structure du projet
+
+```
+employee-management/
+│
+├── assets/
+├── src/
+│   ├── components/
+│   ├── screens/
+│   ├── navigation/
+│   ├── services/
+│   ├── utils/
+│   ├── constants/
+│
+├── App.js
+├── package.json
+└── README.md
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## Fonctionnalités
 
-To learn more about developing your project with Expo, look at the following resources:
+### Gestion des employés
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+* Ajouter un employé
+* Afficher la liste des employés
+* Modifier un employé
+* Supprimer un employé
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+### Calcul des salaires
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+* Salaire = Nombre de jours × Taux journalier
+* Calcul automatique pour chaque employé
+
+---
+
+### Statistiques
+
+* Salaire total
+* Salaire minimum
+* Salaire maximum
+
+---
+
+### Visualisation graphique
+
+* Histogramme (Bar Chart)
+* Camembert (Pie Chart)
+
+---
+
+## Écrans de l’application
+
+* HomeScreen : Liste des employés + statistiques
+* AddEmployeeScreen : Ajouter un employé
+* EditEmployeeScreen : Modifier un employé
+* ChartScreen : Visualisation graphique
+
+---
+
+## API (Backend)
+
+### Endpoints disponibles :
+
+* `GET /employes` → récupérer les employés
+* `POST /employes` → ajouter un employé
+* `PUT /employes/:id` → modifier un employé
+* `DELETE /employes/:id` → supprimer un employé
+
+---
+
+## Installation
+
+### 1. Cloner le projet
+
+```
+git clone https://github.com/florida0101/Gestion-Employe.git
+cd Gestion-Employe
+```
+
+### 2. Installer les dépendances
+
+```
+npm install
+```
+
+### 3. Lancer le projet
+
+```
+npx expo start
+```
+
+---
+
+## 📲 Exécution
+
+* Mobile : scanner le QR code avec Expo Go
+* Web :
+
+```
+npm run web
+```
+
+---
+
+## 📊 Calcul des statistiques
+
+Les statistiques sont calculées à partir des salaires :
+
+```
+Salaire = nombreJours * tauxJournalier
+```
+
+---
+
+## 👨‍💻 Auteur
+
+Projet réalisé dans le cadre d’un projet scolaire de développement d’une application hybride.
